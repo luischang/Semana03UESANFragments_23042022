@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Semana03UESANFragments</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="menu_principal">Principal</string>
+    <string name="menu_registro">Registro</string>
+    <string name="menu_musica">Música</string>
+    <string name="title_musica">Fragmentos en Android</string>
+    <string name="placeholder_fullname">Enter your Full Name</string>
+    <string name="valrbtmale">Male</string>
+    <string name="valrbtfemale">Female</string>
+    <string name="valrbtothers">Others</string>
+</resources>
