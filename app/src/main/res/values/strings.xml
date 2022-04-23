@@ -14,4 +14,19 @@
     <string name="valrbtmale">Male</string>
     <string name="valrbtfemale">Female</string>
     <string name="valrbtothers">Others</string>
+    <string name="valbtnsave">SAVE</string>
+
+    <string-array name="country_array">
+        <item>Brasil</item>
+        <item>Argentina</item>
+        <item>Uruguay</item>
+        <item>Ecuador</item>
+        <item>Perú</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+
+    </string-array>
+
+
+
 </resources>

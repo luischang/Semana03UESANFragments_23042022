@@ -9,24 +9,36 @@
 
     <EditText
         android:id="@+id/etFullName"
-        android:layout_width="309dp"
-        android:layout_height="51dp"
+        android:layout_width="301dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="20dp"
         android:ems="10"
         android:hint="@string/placeholder_fullname"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="32dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="314dp"
-        android:layout_height="81dp"
+        android:id="@+id/textInputLayout2"
+        android:layout_width="311dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="46dp"
         app:counterEnabled="true"
         app:counterMaxLength="20"
         app:helperText="Required"
         app:helperTextEnabled="true"
-        app:startIconDrawable="@android:drawable/ic_dialog_email"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="103dp">
+        app:layout_constraintBottom_toTopOf="@+id/rgGender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFullName"
+        app:startIconDrawable="@android:drawable/ic_dialog_email">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etEmail"
@@ -37,10 +49,12 @@
 
     <RadioGroup
         android:id="@+id/rgGender"
-        android:layout_width="321dp"
-        android:layout_height="148dp"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="212dp">
+        android:layout_width="341dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
 
         <RadioButton
             android:id="@+id/rbtMale"
@@ -60,4 +74,24 @@
             android:layout_height="wrap_content"
             android:text="@string/valrbtothers" />
     </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spnCountry"
+        android:layout_width="312dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgGender" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="311dp"
+        android:layout_height="48dp"
+        android:text="@string/valbtnsave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnCountry" />
 </androidx.constraintlayout.widget.ConstraintLayout>
